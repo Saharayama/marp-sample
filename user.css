@@ -1,0 +1,290 @@
+/* @theme user */
+
+@import 'default';
+
+section {
+  background-image: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 26px;
+  color: #000000;
+  align-content: start;
+}
+
+section::after {
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+  color: #000000;
+}
+
+h1 {
+  color: black;
+}
+
+code {
+  font-family: 'Ricty ShinDiminished', 'Consolas', monospace;
+  tab-size: 4;
+}
+
+pre {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: none;
+  position: relative;
+  overflow: auto;
+}
+
+/* キーワード (例: function, if, var, const, import) */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #569cd6 !important;
+  /* 明るい青 */
+}
+
+/* 文字列 (String) */
+.hljs-string,
+.hljs-regexp,
+.hljs-attr {
+  color: #ce9178 !important;
+  /* 明るいオレンジ */
+}
+
+/* コメント (Comment) */
+.hljs-comment {
+  color: #6a9955 !important;
+  /* 緑 */
+}
+
+/* 値 (Number), ブール値 (Boolean) */
+.hljs-number,
+.hljs-literal {
+  color: #b5cea8 !important;
+  /* 薄い緑 */
+}
+
+/* 変数、プロパティ名 (Variable, Property) */
+.hljs-variable,
+.hljs-name,
+.hljs-attribute {
+  color: #9cdcfe !important;
+  /* 薄い水色 */
+}
+
+/* 関数名 (Function), クラス名 */
+.hljs-built_in,
+.hljs-title {
+  color: #dcdcaa !important;
+  /* 黄色/ゴールド */
+}
+
+/* 演算子 */
+.hljs-operator {
+  color: #d4d4d4 !important;
+  /* 白に近い色 */
+}
+
+:not(pre):not(.hljs)>code {
+  padding: 0.05em 0.2em 0.15em 0.2em;
+  margin: 0;
+  font-size: inherit;
+  white-space: break-spaces;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  color: #000000;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 1. 上の角を丸くする（タイトル行の左右の端） */
+/* thead tr:first-child (最初の行) の th:first-child (左端のセル) */
+table thead tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+/* thead tr:first-child (最初の行) の th:last-child (右端のセル) */
+table thead tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* 2. 下の角を丸くする（最終行の左右の端） */
+/* tbody tr:last-child (最終行) の td:first-child (左端のセル) */
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* tbody tr:last-child (最終行) の td:last-child (右端のセル) */
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+img:not(.emoji) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+  display: inline;
+}
+
+.white {
+  color: white;
+  display: inline;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+  display: inline;
+}
+
+.cjk_fallback {
+  font-family: "Noto Sans JP";
+  font-size: 26px;
+}
+
+section .note {
+  position: relative;
+  padding: 12px 14px 12px 55px;
+  border-left: 8px solid #999;
+  border-radius: 10px;
+  margin: 14px 0;
+  background: #f7f7f7;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+section .note::before {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  font-size: 1.2em;
+  width: 1.5em;
+  text-align: center;
+}
+
+section .note p {
+  margin: 0;
+}
+
+section .note.info {
+  border-color: #2b7bbb;
+  background: #e5f4ff;
+}
+
+section .note.warn {
+  border-color: #d99100;
+  background: #fff4de;
+}
+
+section .note.alert {
+  border-color: #cc3d3d;
+  background: #ffecec;
+}
+
+section .note.check {
+  border-color: #2c8869;
+  background: #e2ffdc;
+}
+
+section .note.info::before {
+  content: "ℹ️";
+}
+
+section .note.warn::before {
+  content: "⚠️";
+}
+
+section .note.alert::before {
+  content: "⛔";
+}
+
+section .note.check::before {
+  content: "✅️";
+}
+
+section.center-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* 中央寄せのクラス */
+.center-text {
+  text-align: center;
+}
+
+/* 右寄せのクラス */
+.right-text {
+  text-align: right;
+}
+
+/* 左寄せのクラス */
+.left-text {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  word-break: auto-phrase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img~span {
+  display: block;
+  margin: -1.5em auto 0;
+  max-inline-size: max-content;
+  margin-inline: auto;
+}
+
+kbd {
+  border: solid 1px #b4b4b4;
+  display: inline-block;
+  margin: 0 0.2em;
+  padding: 0.4em 0.6em;
+  background-color: #f6f8fa;
+  border-bottom: 4px solid #b4b4b4;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-size: 0.8em;
+  line-height: 0.6;
+  box-shadow: 0 2px 3px #111111;
+  font-family: "Ricty ShinDiminished";
+  font-weight: bold;
+}

@@ -1,0 +1,6 @@
+options:
+  emoji:
+    # 絵文字ショートコードをUnicode絵文字として残す
+    shortcode: true
+    # Unicode絵文字をTwemojiに変換するのを無効化する
+    unicode: false

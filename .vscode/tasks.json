@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Convert to PDF",
+            "command": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "./convert.sh"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "none"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        }
+    ]
+}
