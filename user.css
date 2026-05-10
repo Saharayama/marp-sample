@@ -5,10 +5,10 @@
 section {
   background-image: none;
   font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 90px;
+  padding-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
-  font-size: 26px;
+  font-size: 28px;
   color: #000000;
   align-content: start;
 }
@@ -154,7 +154,7 @@ img:not(.emoji) {
 
 .cjk_fallback {
   font-family: "Noto Sans JP";
-  font-size: 26px;
+  font-size: 28px;
 }
 
 section .note {
@@ -259,11 +259,17 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p,
 li {
   text-wrap: pretty;
+}
+
+p {
+  margin-left: 1em;
 }
 
 img~span {

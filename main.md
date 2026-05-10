@@ -5,7 +5,7 @@ lang: ja
 math: katex
 style: |
   section {
-    font-size: 26px;
+    font-size: 28px;
   }
 ---
 
