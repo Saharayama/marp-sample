@@ -3,10 +3,6 @@ marp: true
 paginate: true
 lang: ja
 math: katex
-style: |
-  section {
-    font-size: 28px;
-  }
 ---
 
 <!--
