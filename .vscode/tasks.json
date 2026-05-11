@@ -6,7 +6,7 @@
             "label": "Convert to PDF",
             "command": "C:\\Program Files\\Git\\bin\\bash.exe",
             "args": [
-                "./convert.sh"
+                "\"${workspaceFolder}\\.config\\scripts\\convert.sh\""
             ],
             "problemMatcher": [],
             "group": {
@@ -19,6 +19,12 @@
                 "panel": "shared",
                 "showReuseMessage": false,
                 "clear": false
+            },
+            "options": {
+                "env": {
+                    "ACTIVE_FILE": "${file}",
+                    "WORKSPACE_FOLDER": "${workspaceFolder}"
+                }
             }
         }
     ]
