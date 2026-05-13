@@ -137,7 +137,6 @@ img:not(.emoji) {
 
 .red {
   color: red;
-  font-weight: bold;
   display: inline;
 }
 
@@ -148,7 +147,11 @@ img:not(.emoji) {
 
 .green {
   color: green;
-  font-weight: bold;
+  display: inline;
+}
+
+.cyan {
+  color: cyan;
   display: inline;
 }
 
