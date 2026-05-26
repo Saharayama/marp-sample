@@ -4,11 +4,26 @@
 THEME_NAME="marp-theme.css"
 CONFIG_NAME=".marprc.yml"
 
+# --- 動作モード ---
+# 引数なしの場合はPDF出力
+MODE="${1:-export}"
+
+case "$MODE" in
+  export|preview)
+    ;;
+  *)
+    echo "Error: Unknown mode: $MODE"
+    echo "Usage: $0 [export|preview]"
+    exit 1
+    ;;
+esac
+
 # VS Codeから渡される環境変数
 TARGET_FILE="${ACTIVE_FILE}"
 WS_ROOT="${WORKSPACE_FOLDER}"
 
-echo "--- Marp Export Process Started ---"
+echo "--- Marp Process Started ---"
+echo "Mode: $MODE"
 
 # --- 1. ターゲットファイルの選定 ---
 # アクティブファイルが .md 以外の場合、最新のファイルを検索
@@ -61,21 +76,47 @@ fi
 echo "Target: $TARGET_FILE"
 echo "Config: $CONFIG_PATH"
 echo "Theme:  $CSS_PATH"
-echo "Output: $OUTPUT_PDF"
+
+if [ "$MODE" = "export" ]; then
+  echo "Output: $OUTPUT_PDF"
+fi
+
 echo "-----------------------------------"
 
-marp "$TARGET_FILE" \
-  --config "$CONFIG_PATH" \
-  --theme "$CSS_PATH" \
-  --allow-local-files \
-  -o "$OUTPUT_PDF"
+case "$MODE" in
+  export)
+    marp "$TARGET_FILE" \
+      --config "$CONFIG_PATH" \
+      --theme "$CSS_PATH" \
+      --allow-local-files \
+      -o "$OUTPUT_PDF"
 
-# 実行結果の判定
-if [ $? -eq 0 ]; then
-  echo "-----------------------------------"
-  echo "Success! PDF has been generated."
-else
-  echo "-----------------------------------"
-  echo "Error: Marp conversion failed."
-  exit 1
-fi
+    # 実行結果の判定
+    if [ $? -eq 0 ]; then
+      echo "-----------------------------------"
+      echo "Success! PDF has been generated."
+    else
+      echo "-----------------------------------"
+      echo "Error: Marp conversion failed."
+      exit 1
+    fi
+    ;;
+
+  preview)
+    marp "$TARGET_FILE" \
+      --config "$CONFIG_PATH" \
+      --theme "$CSS_PATH" \
+      --allow-local-files \
+      --preview
+
+    # previewが終了した場合ここに到達
+    if [ $? -eq 0 ]; then
+      echo "-----------------------------------"
+      echo "Preview process finished."
+    else
+      echo "-----------------------------------"
+      echo "Error: Marp preview failed."
+      exit 1
+    fi
+    ;;
+esac

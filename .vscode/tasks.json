@@ -3,10 +3,38 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Convert to PDF",
+            "label": "Marp: Export PDF",
             "command": "C:\\Program Files\\Git\\bin\\bash.exe",
             "args": [
-                "\"${workspaceFolder}\\.config\\scripts\\convert.sh\""
+                "\"${workspaceFolder}\\.config\\scripts\\marp-task.sh\"",
+                "export"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "none"
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "options": {
+                "env": {
+                    "ACTIVE_FILE": "${file}",
+                    "WORKSPACE_FOLDER": "${workspaceFolder}"
+                }
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Marp: Preview",
+            "command": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "\"${workspaceFolder}\\.config\\scripts\\marp-task.sh\"",
+                "preview"
             ],
             "problemMatcher": [],
             "group": {
