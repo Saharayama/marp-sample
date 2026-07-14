@@ -2,11 +2,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
+            "type": "process",
             "label": "Marp: Export PDF",
             "command": "C:\\Program Files\\Git\\bin\\bash.exe",
             "args": [
-                "\"${workspaceFolder}\\.config\\scripts\\marp-task.sh\"",
+                "${workspaceFolder}\\.config\\scripts\\marp-task.sh",
                 "export"
             ],
             "problemMatcher": [],
@@ -29,11 +29,11 @@
             }
         },
         {
-            "type": "shell",
+            "type": "process",
             "label": "Marp: Preview",
             "command": "C:\\Program Files\\Git\\bin\\bash.exe",
             "args": [
-                "\"${workspaceFolder}\\.config\\scripts\\marp-task.sh\"",
+                "${workspaceFolder}\\.config\\scripts\\marp-task.sh",
                 "preview"
             ],
             "problemMatcher": [],
