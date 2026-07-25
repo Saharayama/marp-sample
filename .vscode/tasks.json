@@ -46,7 +46,11 @@
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": false,
-                "clear": false
+                "clear": true,
+                "close": true
+            },
+            "runOptions": {
+                "instanceLimit": 8
             },
             "options": {
                 "env": {
