@@ -359,3 +359,17 @@ section.center-slide {
 .left-text {
   text-align: left;
 }
+
+/* 脚注 */
+.footnote {
+  font-size: 0.8em;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-top: 0.1em dashed;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+}

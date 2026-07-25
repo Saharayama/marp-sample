@@ -44,13 +44,21 @@ bbb
 # 文章の装飾
 - インラインコード`250 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 - aaaと`aaa`と **`aaa`** と**aaa**と*aaa*
-- <span class="red">赤色</span>の文字です😭:sob:
-- <span class="green">緑色</span>の文字です:cat:
+- <span class="red">赤色</span>の文字<sup>[1]</sup>です😭:sob:
+- <span class="green">緑色</span>の文字です<sup>[2]</sup>:cat:
 
 > 引用1行目
 > 引用2行目
 
+↓罫線
+<hr>
+
 - キーボードショートカット<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>、<kbd>Alt+R</kbd>、<kbd>Ctrl+K M</kbd>
+
+<div class="footnote">
+  1: 脚注<br>
+  2: 脚注
+</div>
 
 ---
 
