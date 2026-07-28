@@ -129,47 +129,65 @@ pre {
 }
 
 /* Syntax Highlighting Colors */
-/* 明るい青 */
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-tag {
-  color: #569cd6 !important;
+.hljs {
+  color: #d4d4d4;
 }
 
-/* 明るいオレンジ */
-.hljs-string,
-.hljs-regexp,
-.hljs-attr {
-  color: #ce9178 !important;
-}
-
-/* 緑 */
 .hljs-comment {
-  color: #6a9955 !important;
+  color: #6a9955;
 }
 
-/* 薄い緑 */
-.hljs-number,
-.hljs-literal {
-  color: #b5cea8 !important;
+.hljs-keyword {
+  color: #c586c0;
 }
 
-/* 薄い水色 */
+.hljs-type {
+  color: #569cd6;
+}
+
+.hljs-built_in {
+  color: #dcdcaa;
+}
+
+.hljs-title.function_ {
+  color: #dcdcaa;
+}
+
+.hljs-string {
+  color: #ce9178;
+}
+
+.hljs-number {
+  color: #b5cea8;
+}
+
 .hljs-variable,
-.hljs-name,
-.hljs-attribute {
-  color: #9cdcfe !important;
+.hljs-attr,
+.hljs-property {
+  color: #9cdcfe;
 }
 
-/* 黄色/ゴールド */
-.hljs-built_in,
-.hljs-title {
-  color: #dcdcaa !important;
+.hljs-literal,
+.hljs-symbol,
+.hljs-constant {
+  color: #4fc1ff;
 }
 
-/* 白に近い色 */
-.hljs-operator {
-  color: #d4d4d4 !important;
+.hljs-meta {
+  color: #c586c0;
+}
+
+.hljs-quote,
+.hljs-regexp {
+  color: #ce9178;
+}
+
+.hljs-selector-tag {
+  color: #569cd6;
+}
+
+.hljs-link {
+  color: #3794ff;
 }
 
 /* キーボードタグ */
