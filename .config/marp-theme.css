@@ -3,6 +3,7 @@
 @import 'default';
 
 /* @size a4 210mm 297mm */
+/* @auto-scaling false */
 
 /* =========================================
   ベースレイアウト
@@ -46,10 +47,6 @@ section.a4 {
   }
 
   /* コードブロックの調整 */
-  & pre {
-    font-size: 1em;
-  }
-
   & li pre {
     text-align: left;
     margin-left: 0;

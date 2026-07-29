@@ -80,6 +80,12 @@ bbb
 
 # コードブロック
 
+<style scoped>
+  pre {
+    font-size: 0.85em;
+  }
+</style>
+
 ```javascript
 function hello() {
   // コメント
@@ -92,9 +98,14 @@ alias xargs='xargs '
 alias gds='git diff --staged'
 ```
 
-```
+```shell
 $ echo file_{001..003}.txt
 file_001.txt file_002.txt file_003.txt
+```
+
+```diff
+- aaa
++ bbb
 ```
 
 ---
