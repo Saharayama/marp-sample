@@ -321,7 +321,7 @@ section .note {
 
 /* カラー */
 .red {
-  color: red;
+  color: #e74856;
   display: inline;
 }
 
@@ -331,7 +331,7 @@ section .note {
 }
 
 .green {
-  color: green;
+  color: #0dbc79;
   display: inline;
 }
 

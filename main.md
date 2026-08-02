@@ -82,7 +82,7 @@ bbb
 
 <style scoped>
   pre {
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
 </style>
 
@@ -107,6 +107,14 @@ file_001.txt file_002.txt file_003.txt
 - aaa
 + bbb
 ```
+
+<ul>
+<pre><code><span class="cyan">aaa
+aaa</span>
+bbb   <span class="red">bbb</span>
+<span class="green">bbb</span>
+</code></pre>
+</ul>
 
 ---
 
