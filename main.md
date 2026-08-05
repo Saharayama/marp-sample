@@ -45,7 +45,7 @@ bbb
 - インラインコード`250 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 - aaaと`aaa`と **`aaa`** と**aaa**と*aaa*
 - <span class="red">赤色</span>の文字<sup>[1]</sup>です😭:sob:
-- <span class="green">緑色</span>の文字です<sup>[2]</sup>:cat:
+- <span class="green">緑色</span>の文字です<sup>[2]</sup>:cat:<span class="cyan">シアン</span><span class="gray"><b>グレー太字</b></span><span class="orange"><b>オレンジ太字</b></span>
 
 > 引用1行目
 > 引用2行目

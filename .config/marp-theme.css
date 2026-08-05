@@ -341,22 +341,26 @@ section .note {
 /* カラー */
 .red {
   color: #e74856;
-  display: inline;
 }
 
 .white {
-  color: white;
-  display: inline;
+  color: #fff;
 }
 
 .green {
   color: #0dbc79;
-  display: inline;
 }
 
 .cyan {
-  color: cyan;
-  display: inline;
+  color: #00dfdf;
+}
+
+.orange {
+  color: #ffb454;
+}
+
+.gray {
+  color: #666;
 }
 
 /* フォントフォールバック */
